@@ -4,7 +4,7 @@
 
 2. [Update WSL](#2-Update-WSL)
 
-3. [Move WSL to desired location(optional)](#3-Move-WSL-to-desired-location-(optional)-)
+3. [Move WSL to desired location (optional)](#3-Move-WSL-to-desired-location-)
 
 4. [Delete WSL](#4-Delete-WSL)
 
@@ -49,7 +49,7 @@ Step4 Check WSL version
 
 ```wsl --update```
 
-# 3-Move WSL to desired location (optional)
+# 3-Move WSL to desired location
 
 Step1 List your installed distributions to find the exact name
 
