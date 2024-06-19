@@ -4,7 +4,7 @@
 
 2. [Update WSL](#2-Update-WSL)
 
-3. [Move WSL to desired location (optional)](#3-Move-WSL-to-desired-location-)
+3. [Move WSL to desired location](#3-Move-WSL-to-desired-location-)
 
 4. [Delete WSL](#4-Delete-WSL)
 
