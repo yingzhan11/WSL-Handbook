@@ -1,12 +1,12 @@
 # Index
 
-1. [Install WSL2](#-1-Install-WSL2)
+1. [Install WSL2](#1-Install-WSL2)
 
-2. [Update WSL](#-2-Update-WSL)
+2. [Update WSL](#2-Update-WSL)
 
-3. [Move WSL to desired location(optional)](#-3-Move-WSL-to-desired-location(optional))
+3. [Move WSL to desired location(optional)](#3-Move-WSL-to-desired-location(optional))
 
-4. [Delete WSL](#-4-Delete-WSL)
+4. [Delete WSL](#4-Delete-WSL)
 
 # 1-Install WSL2
 
