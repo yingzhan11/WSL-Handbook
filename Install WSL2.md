@@ -156,7 +156,7 @@ Unregister the specific distribution you want to delete. This will remove the di
 
 **Step3-Disable WSL and Virtual Machine Platform Features**
 
-This command will disablt the WSL and VM platform, and you cannot see the Linux subsystem in folder explorer anymore. Next time if you want to use Linux subsystem and WSL again, you need to enbale this manually, see [Step5 Check installation and open Virtual Machine platform](Step5-Check-installation-and-open-Virtual-Machine-platform).
+This command will disablt the WSL and VM platform, and you cannot see the Linux subsystem in folder explorer anymore. Next time if you want to use Linux subsystem and WSL again, you need to enbale this manually, see [Step5 Check installation and open Virtual Machine platform](#Step5-Check-installation-and-open-Virtual-Machine-platform).
 
 ```
 dism.exe /online /disable-feature /featurename:Microsoft-Windows-Subsystem-Linux /norestart
