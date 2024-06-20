@@ -90,11 +90,17 @@ Remember to update wsl regularly or before install more distribution ```wsl --up
 
 # 3-Move WSL to desired location
 
-WSL2 need about 1GB of disk space, and Ubuntu need 1-2GB, if you install any apt in Ubuntu later they may need more space. So if your system disk does not rich in space, you'd better move the wsl to other disk.
+WSL2 need about 1GB of disk space, and Ubuntu need 1-2GB, if you install any apt in Ubuntu later they may need more space. I install gcc, make and vim, they use 1GB. Totally 4-5GB. 
 
-I found it seems we don't need to put our codes or files in Linux VM. I try to use ubuntu shell to visit my normal windows folder and compile some codes, it works.
+If your system disk isn't rich on space, or you want a lot of distributions and apts, you'd better move the wsl to other disk.
 
-Step1 List your installed distributions to find the exact name
+Good news is I found it seems we don't need to put our codes or files in Linux VM. I try to use ubuntu shell in **vs code**, to visit my normal windows folders and compile some codes, it works. Not work in powershell.
+
+So you only need about 5GB in system disk for all installation pkg if you use vs code. Not sure for other software.
+
+Therefore I didn't move my Ubuntu to other disk now. So this part only show the command without images and testing now.
+
+**Step1 List your installed distributions to find the exact name**
 
 ```wsl --list --verbose```
 
