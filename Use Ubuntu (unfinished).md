@@ -27,3 +27,10 @@ check the installation with ```dpkg -s <name>```
 # Use Ubuntu in VS Code```
 
 install VS Code extension of WSL: UBUNTU, then you can open ubuntu teminal in VS Code
+
+![image](https://github.com/yingzhan11/WSL-Handbook/assets/153290203/93c15149-da14-4e93-99fe-e8d36e3a1bd3)
+
+![image](https://github.com/yingzhan11/WSL-Handbook/assets/153290203/d764bee6-4e4a-42df-ab52-0dafeafcf7fc)
+
+![image](https://github.com/yingzhan11/WSL-Handbook/assets/153290203/fd056503-1520-4e93-9537-509d65bf3e62)
+
