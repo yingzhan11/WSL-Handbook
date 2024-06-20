@@ -59,7 +59,17 @@ After ser username and password successfully, it will login into Ubuntu shell au
 
 ![image](https://github.com/yingzhan11/WSL-Handbook/assets/153290203/0bb3db22-6210-49bf-b058-12f2a1ab580b)
 
-Now you can use Ubuntu in shell and also software like vs code.
+Step5 Check installation and additional function
+
+```
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+
+
+![image](https://github.com/yingzhan11/WSL-Handbook/assets/153290203/5679a07d-1088-49d6-acd0-0137bb045da9)
+
+
 
 # 2-Update WSL
 
