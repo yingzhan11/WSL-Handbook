@@ -12,28 +12,40 @@
 
 Open PowerShell or Windows Command Prompt with administrator permission.
 
-Step1 Enter ```wsl --install``` command to install wsl.
+Step1 Check whether there is a Lunix subsystem on your pc.
+
+Use command ```wsl -l -v``` or ```wsl --list --verbose```
+
+![image](https://github.com/yingzhan11/WSL-Handbook/assets/153290203/3fbe0272-40dc-4d8d-884c-2d52aa64837c)
+
+It shows there is a Linux subsystem for Windows without any distribution, and give some command suggestions to list and install Linux distribution. Go to Step3.
+
+If it shows there isn't a Linux subsystem on your windows, go to Step2.
+
+Step2 Install wsl
+
+Enter ```wsl --install``` command to install wsl.
 
 The default installation path is
 ```
 C:\Users\YourUsername>\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_<some_random_string>\LocalState\
 ```
 
-If you want to install WSL distribution to a different path, you need to export the distribution, unregister it, and then import it to other location you want.
+If you want to install WSL distribution to a different path, you need to finish all installation first then see [Move WSL to desired location](#3-Move-WSL-to-desired-location)
 
-Step2 Set WSL2 version
+Step3 Set WSL2 version
 
-List your installed Linux distributions and check the version of WSL
+Use ```wsl --set-default-version 2``` to set the WSL2 as the default version.
 
-```wsl -l -v```
+Step4 Install a Linux Distribution (Ubuntu as example)
 
-If the version is not WSL2, use ```wsl --set-version <distro name> 2``` (```wsl --set-default-version 2``` from GPT) to se the WSL2 as the default version.
+```wsl --install -d Ubuntu```, recommand this one.
 
-Step3 Install a Linux Distribution (Ubuntu)
-
-```wsl --install -d Ubuntu```
+_command ```wsl --install``` seems choose Ubuntu automatically on my computer_
 
 You can also install distribution from Microsoft Store, search for your desired Linux distribution (e.g., Ubuntu, Debian, Kali Linux, etc.).
+
+![image](https://github.com/yingzhan11/WSL-Handbook/assets/153290203/d46b8a0e-43a7-426d-82fa-82f69b4f0e11)
 
 If you use command line to install distribution, when it done, it will run distribution automatically.
 
@@ -41,9 +53,13 @@ If you install distribution through Microsoft Store, launch it after installatio
 
 It will ask you to set your Linux user name and password.
 
-Step4 Check WSL version
+![image](https://github.com/yingzhan11/WSL-Handbook/assets/153290203/a99529c3-6993-4170-9629-a82d57f639f2)
 
-```wsl --list --verbose```
+After ser username and password successfully, it will login into Ubuntu shell automatically.
+
+![image](https://github.com/yingzhan11/WSL-Handbook/assets/153290203/0bb3db22-6210-49bf-b058-12f2a1ab580b)
+
+Now you can use Ubuntu in shell and also software like vs code.
 
 # 2-Update WSL
 
