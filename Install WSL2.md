@@ -12,7 +12,7 @@
 
 Open PowerShell or Windows Command Prompt with administrator permission.
 
-Step1 Check whether there is a Lunix subsystem on your pc.
+**Step1 Check whether there is a Lunix subsystem on your pc.**
 
 Use command ```wsl -l -v``` or ```wsl --list --verbose```
 
@@ -22,7 +22,7 @@ It shows there is a Linux subsystem for Windows without any distribution, and gi
 
 If it shows there isn't a Linux subsystem on your windows, go to Step2.
 
-Step2 Install wsl
+**Step2 Install wsl**
 
 Enter ```wsl --install``` command to install wsl.
 
@@ -33,11 +33,13 @@ C:\Users\YourUsername>\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWind
 
 If you want to install WSL distribution to a different path, you need to finish all installation first then see [Move WSL to desired location](#3-Move-WSL-to-desired-location)
 
-Step3 Set WSL2 version
+**Step3 Set WSL2 version**
 
 Use ```wsl --set-default-version 2``` to set the WSL2 as the default version.
 
-Step4 Install a Linux Distribution (Ubuntu as example)
+![image](https://github.com/yingzhan11/WSL-Handbook/assets/153290203/85e56fe8-1deb-414c-bc23-67e608fd692b)
+
+**Step4 Install a Linux Distribution (Ubuntu as example)**
 
 ```wsl --install -d Ubuntu```, recommand this one.
 
@@ -59,23 +61,38 @@ After ser username and password successfully, it will login into Ubuntu shell au
 
 ![image](https://github.com/yingzhan11/WSL-Handbook/assets/153290203/0bb3db22-6210-49bf-b058-12f2a1ab580b)
 
-Step5 Check installation and additional function
+**Step5 Check installation and open Virtual Machine platform**
+
+Use command ```wsl -l -v``` to check you already installed a distribution.
+
+![image](https://github.com/yingzhan11/WSL-Handbook/assets/153290203/a62bcbde-edae-4314-9176-132e2f575677)
+
+Then restart your computer.
+
+Open the file explorer, there should be a Linux subsystem here with Ubuntu. 
+
+![image](https://github.com/yingzhan11/WSL-Handbook/assets/153290203/daae089c-36da-47d2-828a-c2d6f0486af8)
+
+If not, you should enable the VM platform manully, use commands:
 
 ```
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-
 ![image](https://github.com/yingzhan11/WSL-Handbook/assets/153290203/5679a07d-1088-49d6-acd0-0137bb045da9)
 
-
+Then restart computer again, and the Linux icon should be there now. And we finish installation.
 
 # 2-Update WSL
 
-```wsl --update```
+Remember to update wsl regularly or before install more distribution ```wsl --update```
 
 # 3-Move WSL to desired location
+
+WSL2 need about 1GB of disk space, and Ubuntu need 1-2GB, if you install any apt in Ubuntu later they may need more space. So if your system disk does not rich in space, you'd better move the wsl to other disk.
+
+I found it seems we don't need to put our codes or files in Linux VM. I try to use ubuntu shell to visit my normal windows folder and compile some codes, it works.
 
 Step1 List your installed distributions to find the exact name
 
