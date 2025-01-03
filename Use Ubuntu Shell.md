@@ -44,3 +44,7 @@ Then open VScode terminal, and you can choose Ubuntu shell now, and your code wi
 
 ![image](https://github.com/yingzhan11/WSL-Handbook/assets/153290203/fd056503-1520-4e93-9537-509d65bf3e62)
 
+If face an issue like: VS code server for WSL closed unexpectedly. Check WSL terminal for more details:
+![97812e3fc6bca9cab74d1ea44ccb418](https://github.com/user-attachments/assets/d6838055-afc0-4b8c-865e-8481a527e74d)
+
+
