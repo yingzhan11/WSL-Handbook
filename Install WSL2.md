@@ -41,7 +41,10 @@ Use ```wsl --set-default-version 2``` to set the WSL2 as the default version.
 
 **Step4-Install a Linux Distribution (Ubuntu as example)**
 
-```wsl --install -d Ubuntu``` (recommand this one)
+```wsl --install -d Ubuntu``` (recommand this one)   
+(When face a issue like: WslRegisterDistribution failed with error: 0x80370102, try to follow below steps)   
+![12f4adb40353b9b98a6354dd6edeb46](https://github.com/user-attachments/assets/e6cc99b1-9542-46d1-a2d4-af1b15578dba)
+
 
 _command ```wsl --install``` seems choose Ubuntu automatically on my computer_
 
